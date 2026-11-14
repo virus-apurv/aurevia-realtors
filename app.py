@@ -1310,6 +1310,9 @@ HTML_TEMPLATE = """
                 linear-gradient(90deg, rgba(212, 175, 55, 0.12) 1px, transparent 1px);
             background-size: 20px 20px;
         }
+        .slide-active-ring {
+            box-shadow: 0 0 0 4px rgba(241, 215, 126, 0.45);
+        }
     </style>
 </head>
 <body class="font-sans antialiased selection:bg-emerald-deep selection:text-gold-light">
@@ -1393,8 +1396,8 @@ HTML_TEMPLATE = """
 
             <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-emerald-deep">
                 <a href="#top-slide-manifesto" class="hover:text-gold-dark transition">About Aurevia</a>
-                <a href="#leadership-showcase" onclick="switchLeadershipSlide(1)" class="hover:text-gold-dark transition">Director's Journey</a>
-                <a href="#leadership-showcase" onclick="switchLeadershipSlide(2)" class="hover:text-gold-dark transition">GM Team (3)</a>
+                <a href="#leadership-slide-1" onclick="switchLeadershipSlide(1)" class="hover:text-gold-dark transition">Director's Slide</a>
+                <a href="#leadership-slide-2" onclick="switchLeadershipSlide(2)" class="hover:text-gold-dark transition">GM Team Slide (3)</a>
                 <a href="#portfolio" class="hover:text-gold-dark transition">Projects & Layouts</a>
                 <a href="#gmail-desk" class="hover:text-gold-dark transition flex items-center gap-1">
                     <span class="text-gold-dark">✉</span> Official Gmail
@@ -1509,7 +1512,7 @@ HTML_TEMPLATE = """
                         <div>
                             <div class="flex items-center justify-between mb-2.5">
                                 <span class="text-[11px] font-extrabold uppercase tracking-widest text-stone-500">General Managers Team (3)</span>
-                                <a href="#leadership-showcase" onclick="switchLeadershipSlide(2)" class="text-[11px] font-bold text-gold-dark hover:underline">Open GM Slide →</a>
+                                <a href="#leadership-slide-2" onclick="switchLeadershipSlide(2)" class="text-[11px] font-bold text-gold-dark hover:underline">Jump to GM Slide 2 ↓</a>
                             </div>
                             <div class="grid grid-cols-1 gap-2.5">
                                 {% for gm in general_managers %}
@@ -1580,38 +1583,41 @@ HTML_TEMPLATE = """
     </section>
 
     <!-- ========================================================================== -->
-    <!-- DEDICATED TWO-SLIDE LEADERSHIP SHOWCASE (SLIDE 1: DIRECTOR | SLIDE 2: GMs) -->
+    <!-- DEDICATED TWO-SLIDE LEADERSHIP SHOWCASE (BOTH SLIDES ALWAYS RENDERED)      -->
     <!-- ========================================================================== -->
     <section id="leadership-showcase" class="py-16 lg:py-24 bg-emerald-deep text-ivory relative overflow-hidden border-b-2 border-gold">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
 
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <!-- Header + Quick Slide Jump Controls -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div>
                     <span class="text-xs uppercase tracking-[0.28em] text-gold-light font-extrabold">Aurevia Realtors Corporate Structure</span>
                     <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-1">Leadership & Executive Hierarchy</h2>
                 </div>
 
-                <div class="inline-flex p-1.5 rounded-full bg-emerald-rich border border-gold/40 self-start md:self-auto">
-                    <button id="tab-slide-1" onclick="switchLeadershipSlide(1)"
-                            class="px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition gold-btn">
-                        Slide 1: Director's Portfolio & Journey
-                    </button>
-                    <button id="tab-slide-2" onclick="switchLeadershipSlide(2)"
-                            class="px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition text-ivory/80 hover:text-white">
+                <div class="inline-flex flex-wrap p-1.5 rounded-full bg-emerald-rich border border-gold/40 self-start md:self-auto gap-1">
+                    <a href="#leadership-slide-1" id="tab-slide-1" onclick="switchLeadershipSlide(1)"
+                       class="px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition gold-btn">
+                        Slide 1: Director's Portfolio
+                    </a>
+                    <a href="#leadership-slide-2" id="tab-slide-2" onclick="switchLeadershipSlide(2)"
+                       class="px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition bg-ivory text-emerald-deep hover:brightness-105">
                         Slide 2: General Managers Team (3)
-                    </button>
+                    </a>
                 </div>
             </div>
 
-            <!-- SLIDE 1: DIRECTOR'S PORTFOLIO, DESCRIPTION & COMPLETE JOURNEY -->
-            <div id="leadership-slide-1" class="slide-panel">
+            <!-- ================================================================== -->
+            <!-- SLIDE 1: SUPREME AUTHORITY — DIRECTOR'S STANDALONE PORTFOLIO       -->
+            <!-- ================================================================== -->
+            <div id="leadership-slide-1" class="slide-panel scroll-mt-28">
                 <div class="bg-gradient-to-br from-ivory via-ivory to-ivory-warm text-emerald-deep rounded-3xl p-8 sm:p-12 lg:p-14 border-2 border-gold shadow-2xl space-y-12">
 
                     <div class="grid lg:grid-cols-12 gap-10 items-start">
                         <div class="lg:col-span-5">
                             <div class="bg-emerald-deep text-ivory rounded-3xl p-8 border-2 border-gold shadow-xl">
                                 <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold/20 border border-gold text-gold-light text-[10px] font-extrabold uppercase tracking-[0.2em] mb-6">
-                                    👑 Supreme Head of Aurevia Realtors
+                                    👑 Slide 01 — Supreme Head of the Company
                                 </div>
 
                                 <div class="w-28 h-28 rounded-3xl bg-gradient-to-br from-gold-light via-gold to-gold-dark text-emerald-deep flex items-center justify-center font-serif text-5xl font-bold shadow-lg border-2 border-white/40 mb-6">
@@ -1724,47 +1730,43 @@ HTML_TEMPLATE = """
                             </div>
                             {% endfor %}
                         </div>
-
-                        <div class="mt-8 pt-6 border-t border-gold/30 flex flex-col sm:flex-row items-center justify-between gap-4">
-                            <span class="text-xs text-stone-600 font-semibold">
-                                Next Slide: Explore our 3 General Managers executing the Director's vision across Resale, Fresh Projects & Leasing.
-                            </span>
-                            <button onclick="switchLeadershipSlide(2)"
-                                    class="px-6 py-3 rounded-full emerald-btn text-xs font-bold uppercase tracking-wider hover:opacity-95 transition shrink-0">
-                                View General Managers Slide (Slide 2) →
-                            </button>
-                        </div>
                     </div>
 
                 </div>
             </div>
 
-            <!-- SLIDE 2: THREE GENERAL MANAGERS PORTFOLIO -->
-            <div id="leadership-slide-2" class="slide-panel hidden">
-                <div class="bg-ivory/5 rounded-3xl p-6 sm:p-10 border-2 border-gold/50">
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-8 mb-8 border-b border-gold/30 gap-4">
+            <!-- ================================================================== -->
+            <!-- SLIDE 2: THREE GENERAL MANAGERS PORTFOLIO (ALWAYS VISIBLE SLIDE)   -->
+            <!-- ================================================================== -->
+            <div id="leadership-slide-2" class="slide-panel scroll-mt-28">
+                <div class="bg-ivory/10 rounded-3xl p-8 sm:p-12 border-2 border-gold shadow-2xl">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-8 mb-10 border-b border-gold/40 gap-4">
                         <div>
-                            <span class="text-xs uppercase tracking-[0.22em] text-gold-light font-extrabold">Slide 02 / 02 — Core Execution Team of Aurevia Realtors</span>
-                            <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">General Managers Portfolio</h3>
-                            <p class="text-xs sm:text-sm text-ivory/75 mt-1">
-                                Operating under the supreme leadership of Director Narendar Bhati, our three General Managers spearhead Aurevia Realtors' core operational departments.
+                            <span class="inline-block px-4 py-1 rounded-full bg-gold/20 border border-gold text-gold-light text-xs uppercase tracking-[0.22em] font-extrabold mb-2">
+                                Slide 02 / 02 — Core Execution Team of Aurevia Realtors
+                            </span>
+                            <h3 class="font-serif text-3xl sm:text-5xl font-bold text-white mt-1">
+                                General Managers Portfolio (3 Department Heads)
+                            </h3>
+                            <p class="text-xs sm:text-sm text-ivory/80 mt-2 max-w-3xl">
+                                Operating under the supreme direction of Director Narendar Bhati, our three General Managers lead dedicated verticals for Resale & Plots, 2026 Fresh Project Launches, and Corporate & Luxury Residential Leasing.
                             </p>
                         </div>
-                        <button onclick="switchLeadershipSlide(1)"
-                                class="self-start sm:self-auto px-4 py-2.5 rounded-full bg-ivory/10 border border-gold/40 text-gold-light text-xs font-bold hover:bg-ivory/20 transition shrink-0">
-                            ← Back to Director's Portfolio & Journey
-                        </button>
+                        <a href="#leadership-slide-1" onclick="switchLeadershipSlide(1)"
+                           class="self-start sm:self-auto px-5 py-2.5 rounded-full bg-ivory text-emerald-deep text-xs font-extrabold uppercase tracking-wider hover:bg-white transition shrink-0 shadow">
+                            ↑ Slide 1: Director's Office
+                        </a>
                     </div>
 
-                    <div class="grid lg:grid-cols-3 gap-7">
+                    <div class="grid lg:grid-cols-3 gap-8">
                         {% for gm in general_managers %}
-                        <div class="bg-ivory text-emerald-deep rounded-3xl p-7 border-2 border-gold/60 shadow-2xl flex flex-col justify-between">
+                        <div class="bg-ivory text-emerald-deep rounded-3xl p-7 border-2 border-gold/70 shadow-2xl flex flex-col justify-between">
                             <div>
                                 <div class="flex items-center justify-between mb-5">
-                                    <div class="w-14 h-14 rounded-2xl bg-emerald-deep text-gold-light flex items-center justify-center font-serif text-xl font-bold border-2 border-gold">
+                                    <div class="w-16 h-16 rounded-2xl bg-emerald-deep text-gold-light flex items-center justify-center font-serif text-2xl font-bold border-2 border-gold">
                                         {{ gm.initials }}
                                     </div>
-                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-gold/20 text-emerald-deep border border-gold/40">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-3.5 py-1.5 rounded-full bg-gold/25 text-emerald-deep border border-gold/50">
                                         {{ gm.badge }}
                                     </span>
                                 </div>
@@ -1816,11 +1818,6 @@ HTML_TEMPLATE = """
                         {% endfor %}
                     </div>
                 </div>
-            </div>
-
-            <div class="flex items-center justify-center gap-3 mt-8">
-                <button id="dot-1" onclick="switchLeadershipSlide(1)" class="w-10 h-2.5 rounded-full bg-gold transition-all"></button>
-                <button id="dot-2" onclick="switchLeadershipSlide(2)" class="w-3 h-2.5 rounded-full bg-ivory/30 hover:bg-ivory/60 transition-all"></button>
             </div>
 
         </div>
@@ -2351,23 +2348,15 @@ HTML_TEMPLATE = """
             const slide2 = document.getElementById('leadership-slide-2');
             const tab1 = document.getElementById('tab-slide-1');
             const tab2 = document.getElementById('tab-slide-2');
-            const dot1 = document.getElementById('dot-1');
-            const dot2 = document.getElementById('dot-2');
 
             if (slideNumber === 1) {
-                slide1.classList.remove('hidden');
-                slide2.classList.add('hidden');
                 tab1.className = "px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition gold-btn";
-                tab2.className = "px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition text-ivory/80 hover:text-white";
-                dot1.className = "w-10 h-2.5 rounded-full bg-gold transition-all";
-                dot2.className = "w-3 h-2.5 rounded-full bg-ivory/30 hover:bg-ivory/60 transition-all";
+                tab2.className = "px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition bg-ivory text-emerald-deep hover:brightness-105";
+                slide1.scrollIntoView({ behavior: 'smooth', block: 'start' });
             } else {
-                slide1.classList.add('hidden');
-                slide2.classList.remove('hidden');
                 tab2.className = "px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition gold-btn";
-                tab1.className = "px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition text-ivory/80 hover:text-white";
-                dot2.className = "w-10 h-2.5 rounded-full bg-gold transition-all";
-                dot1.className = "w-3 h-2.5 rounded-full bg-ivory/30 hover:bg-ivory/60 transition-all";
+                tab1.className = "px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition bg-ivory text-emerald-deep hover:brightness-105";
+                slide2.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         }
 
@@ -2505,8 +2494,10 @@ def home():
 
 @app.route("/logo.jpeg")
 def serve_logo():
-    if os.path.exists("logo.jpeg"):
-        return send_from_directory(".", "logo.jpeg")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    logo_path = os.path.join(base_dir, "logo.jpeg")
+    if os.path.exists(logo_path):
+        return send_from_directory(base_dir, "logo.jpeg")
     return ("Logo not found", 404)
 
 @app.route("/api/inquiry", methods=["POST"])
@@ -2520,16 +2511,21 @@ def save_inquiry():
         "specialist": data.get("specialist"),
         "message": data.get("message")
     }
+    # Use /tmp/leads.json on Vercel serverless (read-only root filesystem)
+    leads_file = "/tmp/leads.json" if os.environ.get("VERCEL") else "leads.json"
     leads = []
-    if os.path.exists("leads.json"):
+    if os.path.exists(leads_file):
         try:
-            with open("leads.json", "r") as f:
+            with open(leads_file, "r") as f:
                 leads = json.load(f)
         except Exception:
             leads = []
     leads.append(lead)
-    with open("leads.json", "w") as f:
-        json.dump(leads, f, indent=4)
+    try:
+        with open(leads_file, "w") as f:
+            json.dump(leads, f, indent=4)
+    except Exception:
+        pass
     return jsonify({
         "status": "success",
         "message": f"Thank you {lead['name']}! Your floor plan & cost sheet request has been logged and assigned to {lead['specialist']} (Official Gmail: aureviarealtors@gmail.com)."
@@ -2539,12 +2535,13 @@ def save_inquiry():
 def view_leads():
     if request.args.get("key") != "aurevia2026":
         return "Unauthorized. Append ?key=aurevia2026 to URL.", 403
-    if not os.path.exists("leads.json"):
+    leads_file = "/tmp/leads.json" if os.environ.get("VERCEL") else "leads.json"
+    if not os.path.exists(leads_file):
         return jsonify([])
-    with open("leads.json", "r") as f:
+    with open(leads_file, "r") as f:
         return jsonify(json.load(f))
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    print(f"\n✨ Aurevia Realtors Portal (Director + 3 GMs) is LIVE at: http://127.0.0.1:{port}\n")
+    print(f"\n✨ Aurevia Realtors Portal (Vercel + Render Ready) is LIVE at: http://127.0.0.1:{port}\n")
     app.run(host="0.0.0.0", port=port, debug=True)
