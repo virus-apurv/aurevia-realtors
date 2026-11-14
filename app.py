@@ -26,7 +26,7 @@ AUREVIA_MANIFESTO = {
         "Welcome to Aurevia Realtors, where architectural grandeur meets institutional integrity. Headquartered at the nerve center of the Noida-Greater Noida Expressway—1705, E Square, Plot No. C2, Sector 96, Noida—Aurevia Realtors was established with a singular, uncompromising mandate: to 'Elevate Your Living' through precision-engineered real estate advisory, transparent asset valuation, and enduring wealth creation. Derived from the timeless ideals of golden excellence ('Aureus') and a sovereign pathway ('Via'), our emblem—crowned in royal gold above deep emerald architectural peaks—symbolizes the pinnacle of trust, stability, and prosperity that defines every transaction under our banner.",
         "In a rapidly evolving real estate landscape across the National Capital Region, discerning homebuyers, corporate enterprises, and high-net-worth investors require far more than conventional property brokerage. They require a strategic custodian of capital. At Aurevia Realtors, we bridge the gap between aspiration and acquisition across five specialized verticals: Ultra-Luxury Residential Condominiums, Grade-A Commercial and Corporate Suites, Authority and Gated Island Plots, Verified Secondary Market Resale and Executive Leasing, and Bespoke Wilderness Farmhouses and Holiday Villas. Whether securing a primary allotment in a landmark sky-villa along Sector 128, structuring a high-yield corporate floor plate on the Expressway, or acquiring a legacy land parcel, our advisory protocol is anchored in rigorous due diligence.",
         "What distinguishes Aurevia Realtors is our strict zero-tolerance policy toward speculative or inflated listings. Every mandate showcased in our portfolio—spanning flagship developments by Eldeco Group, Godrej Properties, Hero Homes, Max Estates, Kalpataru, Sobha, ACE Group, ATS, and SKA, alongside our curated E Square commercial suites and Casa Corbett luxury retreats—undergoes a comprehensive verification of RERA compliance, clear title lineage, and real-time per-square-foot Base Selling Price (BSP) benchmarking. We empower our clients with factual market intelligence, comparative micro-market appreciation analytics, and direct-to-developer or direct-to-owner negotiation leverage, ensuring that every rupee deployed is fortified against risk and positioned for superior capital growth.",
-        "Our organizational architecture is built for seamless execution and personal accountability. Under the supreme executive stewardship of our Director, Mr. Narendar Bhati, Aurevia Realtors operates through specialized departmental verticals led by seasoned General Managers—ensuring that fresh project bookings, secondary resale mandates, and corporate or luxury residential leasing each receive dedicated, domain-specific mastery. From the initial portfolio consultation and private chauffeured site walkthroughs to financial structuring, legal documentation, and long-term lease management, we remain a lifelong partner in your real estate journey.",
+        "Our organizational architecture is built for seamless execution and personal accountability. Under the supreme executive stewardship of our Director, Mr. Narendar Bhati, Aurevia Realtors operates through specialized departmental verticals led by three seasoned General Managers—Mr. Anand Basista (Resale & Fresh Projects), Mr. Himanshu Bhutai (Fresh Projects), and Mr. Apurv Mishra (Corporate & Luxury Leasing)—ensuring that every client mandate receives dedicated, domain-specific mastery. From initial portfolio consultation and private site walkthroughs to financial structuring, legal documentation, and long-term lease management, we remain a lifelong partner in your real estate journey.",
         "At Aurevia Realtors, we do not merely transact square footage; we curate legacies, fortify generational balance sheets, and shape the skylines where families and enterprises thrive. Step into our corporate suite in Sector 96, Noida, or write to us directly at aureviarealtors@gmail.com to experience real estate advisory elevated to a royal standard."
     ]
 }
@@ -73,7 +73,7 @@ DIRECTOR = {
         {
             "era": "Phase IV • The Royal Crest",
             "title": "Founding Aurevia Realtors at E Square, Sector 96",
-            "detail": "Established Aurevia Realtors at 1705, E Square, Sector 96, Noida—uniting a handpicked leadership team of specialized General Managers under one royal emblem to deliver transparent, full-spectrum real estate advisory."
+            "detail": "Established Aurevia Realtors at 1705, E Square, Sector 96, Noida—uniting a handpicked leadership team of three specialized General Managers under one royal emblem to deliver transparent, full-spectrum real estate advisory."
         }
     ],
     "pillars": [
@@ -84,7 +84,7 @@ DIRECTOR = {
     ]
 }
 
-# SLIDE 2: THE CORE TEAM — GENERAL MANAGERS PORTFOLIO
+# SLIDE 2: THE CORE TEAM — THREE GENERAL MANAGERS PORTFOLIO
 GENERAL_MANAGERS = [
     {
         "name": "Anand Basista",
@@ -94,13 +94,30 @@ GENERAL_MANAGERS = [
         "phone_display": "(+91) 82879-06328",
         "email": "aureviarealtors@gmail.com",
         "initials": "AB",
-        "badge": "Department Head — Resale & Fresh Projects",
-        "bio": "Operating under the strategic vision of the Director, Mr. Anand Basista leads Aurevia Realtors' primary builder launches and verified secondary market resale transactions across Eldeco, Godrej, Hero Homes, Max Estates, Sobha, ACE, and authority plot corridors.",
+        "badge": "GM — Resale & Fresh Projects",
+        "bio": "Operating under the strategic vision of the Director, Mr. Anand Basista leads Aurevia Realtors' verified secondary market resale mandates, authority plots, and flagship builder portfolios across Noida Expressway and Greater Noida.",
         "specialties": [
-            "Primary Developer Launch Allotments",
             "Verified Luxury Resale Inventory",
             "Expressway & Central Island Plots",
-            "Holiday Villas & Farmhouse Estates"
+            "Flagship Under-Construction Mandates",
+            "Direct Owner & Builder Negotiations"
+        ]
+    },
+    {
+        "name": "Himanshu Bhutai",
+        "role": "General Manager",
+        "department": "Fresh Project",
+        "phone": "9990005736",
+        "phone_display": "(+91) 99900-05736",
+        "email": "aureviarealtors@gmail.com",
+        "initials": "HB",
+        "badge": "GM — Fresh Projects",
+        "bio": "Spearheading primary developer launches, priority EOI allotments, and inaugural BSP inventory across Eldeco Group, Godrej Properties, Hero Homes, Sobha Limited, and luxury resort villas.",
+        "specialties": [
+            "2026 New Launch Priority Allotments",
+            "Pre-Launch EOI & Inaugural BSP Deals",
+            "Eldeco, Godrej, Hero & Sobha Desk",
+            "Builder Payment Plan Structuring"
         ]
     },
     {
@@ -111,7 +128,7 @@ GENERAL_MANAGERS = [
         "phone_display": "(+91) 94128-80777",
         "email": "aureviarealtors@gmail.com",
         "initials": "AM",
-        "badge": "Department Head — Corporate & Luxury Leasing",
+        "badge": "GM — Corporate & Luxury Leasing",
         "bio": "Leading the company's Grade-A corporate office leasing along Noida Expressway (E Square, Sector 96 & IT/ITES corridors) alongside ready-to-move luxury residential rentals across Godrej, Eldeco, Kalpataru, and ATS societies.",
         "specialties": [
             "Grade-A Corporate Suites & IT Floor Plates",
@@ -185,10 +202,10 @@ PROPERTIES = [
             }
         ],
         "highlights": ["7 Standalone Towers (Denali, Everest, Kili Open)", "All-Room VRV Air Conditioning", "Massive Central Open Greens", "Priority Fresh Allotment Desk"],
-        "contact_person": "Anand Basista",
-        "contact_role": "GM — Resale & Fresh",
-        "contact_phone": "8287906328",
-        "contact_phone_styled": "(+91) 82879-06328",
+        "contact_person": "Himanshu Bhutai",
+        "contact_role": "GM — Fresh Project",
+        "contact_phone": "9990005736",
+        "contact_phone_styled": "(+91) 99900-05736",
         "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=85"
     },
     {
@@ -233,10 +250,10 @@ PROPERTIES = [
             }
         ],
         "highlights": ["15 Mins to Noida International Airport (Jewar)", "Adjacent to Buddh International Circuit", "VRV Air-Conditioned Luxury Towers", "Inaugural Launch Price Benefits"],
-        "contact_person": "Anand Basista",
-        "contact_role": "GM — Resale & Fresh",
-        "contact_phone": "8287906328",
-        "contact_phone_styled": "(+91) 82879-06328",
+        "contact_person": "Himanshu Bhutai",
+        "contact_role": "GM — Fresh Project",
+        "contact_phone": "9990005736",
+        "contact_phone_styled": "(+91) 99900-05736",
         "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=85"
     },
     {
@@ -438,10 +455,10 @@ PROPERTIES = [
             }
         ],
         "highlights": ["Direct Access to Sector 146 Metro Station", "Lagoon-Style Swimming Pool & Beach Club", "Air Purification Technology in Every Tower", "30:40:30 Executive Payment Structure"],
-        "contact_person": "Anand Basista",
-        "contact_role": "GM — Resale & Fresh",
-        "contact_phone": "8287906328",
-        "contact_phone_styled": "(+91) 82879-06328",
+        "contact_person": "Himanshu Bhutai",
+        "contact_role": "GM — Fresh Project",
+        "contact_phone": "9990005736",
+        "contact_phone_styled": "(+91) 99900-05736",
         "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=85"
     },
     {
@@ -486,10 +503,10 @@ PROPERTIES = [
             }
         ],
         "highlights": ["Low-Density Green Sector", "Resort-Style Central Greens", "25 Mins to Noida International Airport", "Confirmed Fresh Allotments"],
-        "contact_person": "Anand Basista",
-        "contact_role": "GM — Resale & Fresh",
-        "contact_phone": "8287906328",
-        "contact_phone_styled": "(+91) 82879-06328",
+        "contact_person": "Himanshu Bhutai",
+        "contact_role": "GM — Fresh Project",
+        "contact_phone": "9990005736",
+        "contact_phone_styled": "(+91) 99900-05736",
         "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=85"
     },
     {
@@ -678,10 +695,10 @@ PROPERTIES = [
             }
         ],
         "highlights": ["ERV AQI-Controlled Air Filtration Homes", "1 Lakh Sq.Ft. Club & Lifestyle Amenities", "Premium Marble Flooring & All-Weather AC", "Backed by the Trusted Hero Group Legacy"],
-        "contact_person": "Anand Basista",
-        "contact_role": "GM — Resale & Fresh",
-        "contact_phone": "8287906328",
-        "contact_phone_styled": "(+91) 82879-06328",
+        "contact_person": "Himanshu Bhutai",
+        "contact_role": "GM — Fresh Project",
+        "contact_phone": "9990005736",
+        "contact_phone_styled": "(+91) 99900-05736",
         "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
     },
     {
@@ -726,10 +743,10 @@ PROPERTIES = [
             }
         ],
         "highlights": ["85% Open Landscaped Greens & Healing Gardens", "Biometric Digital Locks & Smart Controls", "Dedicated Sports Arena & Heated Pool", "Direct Builder Price & Early-Bird Benefits"],
-        "contact_person": "Anand Basista",
-        "contact_role": "GM — Resale & Fresh",
-        "contact_phone": "8287906328",
-        "contact_phone_styled": "(+91) 82879-06328",
+        "contact_person": "Himanshu Bhutai",
+        "contact_role": "GM — Fresh Project",
+        "contact_phone": "9990005736",
+        "contact_phone_styled": "(+91) 99900-05736",
         "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=85"
     },
     {
@@ -918,10 +935,10 @@ PROPERTIES = [
             }
         ],
         "highlights": ["Low-Density Podium Design", "Olympic-Size Swimming Pool", "5 Mins from FNG & Hindon Bridge", "Priority Fresh Allotment Desk"],
-        "contact_person": "Anand Basista",
-        "contact_role": "GM — Resale & Fresh",
-        "contact_phone": "8287906328",
-        "contact_phone_styled": "(+91) 82879-06328",
+        "contact_person": "Himanshu Bhutai",
+        "contact_role": "GM — Fresh Project",
+        "contact_phone": "9990005736",
+        "contact_phone_styled": "(+91) 99900-05736",
         "image": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1200&q=85"
     },
     {
@@ -1106,10 +1123,10 @@ PROPERTIES = [
             }
         ],
         "highlights": ["Private Heated Plunge Pool & Gazebo", "5-Star Resort Operator Leaseback", "Lush Forest & River-Side Microclimate", "Zero Maintenance Hassle for Owners"],
-        "contact_person": "Anand Basista",
-        "contact_role": "GM — Resale & Fresh",
-        "contact_phone": "8287906328",
-        "contact_phone_styled": "(+91) 82879-06328",
+        "contact_person": "Himanshu Bhutai",
+        "contact_role": "GM — Fresh Project",
+        "contact_phone": "9990005736",
+        "contact_phone_styled": "(+91) 99900-05736",
         "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=85"
     }
 ]
@@ -1125,7 +1142,7 @@ HTML_TEMPLATE = """
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ company.name }} — {{ company.tagline }} | Official Noida Real Estate Portal</title>
-    <meta name="description" content="Aurevia Realtors (1705 E Square, Sector 96, Noida | aureviarealtors@gmail.com). Led by Director Narendar Bhati, with General Managers Anand Basista and Apurv Mishra.">
+    <meta name="description" content="Aurevia Realtors (1705 E Square, Sector 96, Noida | aureviarealtors@gmail.com). Led by Director Narendar Bhati, with General Managers Anand Basista, Himanshu Bhutai, and Apurv Mishra.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -1199,7 +1216,7 @@ HTML_TEMPLATE = """
             box-shadow: 0 25px 50px -12px rgba(11, 46, 28, 0.16);
         }
 
-        /* NEW LUXURY PHONE NUMBER PILL STYLE */
+        /* LUXURY PHONE NUMBER PILL STYLE */
         .phone-pill {
             display: inline-flex;
             align-items: center;
@@ -1377,7 +1394,7 @@ HTML_TEMPLATE = """
             <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-emerald-deep">
                 <a href="#top-slide-manifesto" class="hover:text-gold-dark transition">About Aurevia</a>
                 <a href="#leadership-showcase" onclick="switchLeadershipSlide(1)" class="hover:text-gold-dark transition">Director's Journey</a>
-                <a href="#leadership-showcase" onclick="switchLeadershipSlide(2)" class="hover:text-gold-dark transition">GM Team</a>
+                <a href="#leadership-showcase" onclick="switchLeadershipSlide(2)" class="hover:text-gold-dark transition">GM Team (3)</a>
                 <a href="#portfolio" class="hover:text-gold-dark transition">Projects & Layouts</a>
                 <a href="#gmail-desk" class="hover:text-gold-dark transition flex items-center gap-1">
                     <span class="text-gold-dark">✉</span> Official Gmail
@@ -1475,7 +1492,6 @@ HTML_TEMPLATE = """
                             <div class="flex flex-wrap items-center justify-between gap-3">
                                 <div>
                                     <p class="font-serif text-2xl font-bold text-white">{{ director.name }}</p>
-                                    <!-- NEW LUXURY PHONE PILL -->
                                     <a href="tel:{{ director.phone }}" class="phone-pill-light text-xs mt-2">
                                         <span class="phone-pill-icon">
                                             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
@@ -1489,21 +1505,21 @@ HTML_TEMPLATE = """
                             </div>
                         </div>
 
-                        <!-- 2. GENERAL MANAGERS TEAM -->
+                        <!-- 2. THREE GENERAL MANAGERS TEAM -->
                         <div>
                             <div class="flex items-center justify-between mb-2.5">
-                                <span class="text-[11px] font-extrabold uppercase tracking-widest text-stone-500">General Managers Team</span>
+                                <span class="text-[11px] font-extrabold uppercase tracking-widest text-stone-500">General Managers Team (3)</span>
                                 <a href="#leadership-showcase" onclick="switchLeadershipSlide(2)" class="text-[11px] font-bold text-gold-dark hover:underline">Open GM Slide →</a>
                             </div>
-                            <div class="grid grid-cols-1 gap-3">
+                            <div class="grid grid-cols-1 gap-2.5">
                                 {% for gm in general_managers %}
-                                <div class="p-3.5 rounded-2xl bg-ivory border border-gold/40 flex flex-wrap items-center justify-between gap-3">
+                                <div class="p-3 rounded-2xl bg-ivory border border-gold/40 flex flex-wrap items-center justify-between gap-2">
                                     <div>
                                         <span class="text-[9px] font-extrabold uppercase tracking-wider text-emerald-rich block">{{ gm.role }} — {{ gm.department }}</span>
-                                        <p class="font-serif text-xl font-bold text-emerald-deep">{{ gm.name }}</p>
+                                        <p class="font-serif text-lg font-bold text-emerald-deep leading-snug">{{ gm.name }}</p>
                                     </div>
-                                    <div class="flex items-center gap-2">
-                                        <a href="tel:{{ gm.phone }}" class="phone-pill text-xs">
+                                    <div class="flex items-center gap-1.5">
+                                        <a href="tel:{{ gm.phone }}" class="phone-pill text-[11px]">
                                             <span class="phone-pill-icon">
                                                 <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
                                             </span>
@@ -1582,7 +1598,7 @@ HTML_TEMPLATE = """
                     </button>
                     <button id="tab-slide-2" onclick="switchLeadershipSlide(2)"
                             class="px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider transition text-ivory/80 hover:text-white">
-                        Slide 2: General Managers Team
+                        Slide 2: General Managers Team (3)
                     </button>
                 </div>
             </div>
@@ -1711,7 +1727,7 @@ HTML_TEMPLATE = """
 
                         <div class="mt-8 pt-6 border-t border-gold/30 flex flex-col sm:flex-row items-center justify-between gap-4">
                             <span class="text-xs text-stone-600 font-semibold">
-                                Next Slide: Explore the General Managers Team executing the Director's vision across Resale, Fresh Projects & Leasing.
+                                Next Slide: Explore our 3 General Managers executing the Director's vision across Resale, Fresh Projects & Leasing.
                             </span>
                             <button onclick="switchLeadershipSlide(2)"
                                     class="px-6 py-3 rounded-full emerald-btn text-xs font-bold uppercase tracking-wider hover:opacity-95 transition shrink-0">
@@ -1723,7 +1739,7 @@ HTML_TEMPLATE = """
                 </div>
             </div>
 
-            <!-- SLIDE 2: GENERAL MANAGERS PORTFOLIO -->
+            <!-- SLIDE 2: THREE GENERAL MANAGERS PORTFOLIO -->
             <div id="leadership-slide-2" class="slide-panel hidden">
                 <div class="bg-ivory/5 rounded-3xl p-6 sm:p-10 border-2 border-gold/50">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-8 mb-8 border-b border-gold/30 gap-4">
@@ -1731,7 +1747,7 @@ HTML_TEMPLATE = """
                             <span class="text-xs uppercase tracking-[0.22em] text-gold-light font-extrabold">Slide 02 / 02 — Core Execution Team of Aurevia Realtors</span>
                             <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">General Managers Portfolio</h3>
                             <p class="text-xs sm:text-sm text-ivory/75 mt-1">
-                                Operating under the supreme leadership of Director Narendar Bhati, our General Managers spearhead Aurevia Realtors' core operational departments.
+                                Operating under the supreme leadership of Director Narendar Bhati, our three General Managers spearhead Aurevia Realtors' core operational departments.
                             </p>
                         </div>
                         <button onclick="switchLeadershipSlide(1)"
@@ -1740,32 +1756,32 @@ HTML_TEMPLATE = """
                         </button>
                     </div>
 
-                    <div class="grid md:grid-cols-2 gap-8">
+                    <div class="grid lg:grid-cols-3 gap-7">
                         {% for gm in general_managers %}
-                        <div class="bg-ivory text-emerald-deep rounded-3xl p-8 border-2 border-gold/60 shadow-2xl flex flex-col justify-between">
+                        <div class="bg-ivory text-emerald-deep rounded-3xl p-7 border-2 border-gold/60 shadow-2xl flex flex-col justify-between">
                             <div>
-                                <div class="flex items-center justify-between mb-6">
-                                    <div class="w-16 h-16 rounded-2xl bg-emerald-deep text-gold-light flex items-center justify-center font-serif text-2xl font-bold border-2 border-gold">
+                                <div class="flex items-center justify-between mb-5">
+                                    <div class="w-14 h-14 rounded-2xl bg-emerald-deep text-gold-light flex items-center justify-center font-serif text-xl font-bold border-2 border-gold">
                                         {{ gm.initials }}
                                     </div>
-                                    <span class="text-[11px] font-extrabold uppercase tracking-wider px-3.5 py-1.5 rounded-full bg-gold/20 text-emerald-deep border border-gold/40">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full bg-gold/20 text-emerald-deep border border-gold/40">
                                         {{ gm.badge }}
                                     </span>
                                 </div>
 
-                                <h4 class="font-serif text-3xl sm:text-4xl font-bold text-emerald-deep">{{ gm.name }}</h4>
-                                <p class="text-sm font-extrabold text-gold-dark uppercase tracking-wider mt-1">{{ gm.role }}</p>
+                                <h4 class="font-serif text-3xl font-bold text-emerald-deep">{{ gm.name }}</h4>
+                                <p class="text-xs font-extrabold text-gold-dark uppercase tracking-wider mt-1">{{ gm.role }}</p>
                                 <p class="text-xs font-bold text-emerald-rich mt-1 uppercase tracking-wide">Department: {{ gm.department }}</p>
 
-                                <p class="text-xs sm:text-sm text-stone-600 leading-relaxed mt-4 pt-4 border-t border-stone-200">
+                                <p class="text-xs text-stone-600 leading-relaxed mt-4 pt-4 border-t border-stone-200">
                                     {{ gm.bio }}
                                 </p>
 
-                                <div class="mt-5">
-                                    <p class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-deep mb-2">Department Specializations:</p>
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                <div class="mt-4">
+                                    <p class="text-[10px] font-extrabold uppercase tracking-wider text-emerald-deep mb-2">Department Specializations:</p>
+                                    <div class="space-y-1.5">
                                         {% for spec in gm.specialties %}
-                                        <div class="text-xs bg-white px-3 py-2 rounded-xl border border-gold/30 font-medium text-emerald-deep">
+                                        <div class="text-xs bg-white px-3 py-1.5 rounded-xl border border-gold/30 font-medium text-emerald-deep">
                                             • {{ spec }}
                                         </div>
                                         {% endfor %}
@@ -1773,10 +1789,10 @@ HTML_TEMPLATE = """
                                 </div>
                             </div>
 
-                            <div class="mt-8 pt-5 border-t border-stone-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <div class="mt-6 pt-5 border-t border-stone-200 space-y-3">
                                 <div>
                                     <p class="text-[10px] text-stone-500 uppercase tracking-wider font-bold mb-1.5">Direct Executive Hotline</p>
-                                    <a href="tel:{{ gm.phone }}" class="phone-pill text-xs">
+                                    <a href="tel:{{ gm.phone }}" class="phone-pill text-xs w-full justify-center">
                                         <span class="phone-pill-icon">
                                             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
                                         </span>
@@ -1784,14 +1800,14 @@ HTML_TEMPLATE = """
                                         <span class="live-dot"></span>
                                     </a>
                                 </div>
-                                <div class="flex gap-2.5">
+                                <div class="grid grid-cols-2 gap-2.5">
                                     <a href="mailto:{{ gm.email }}?subject=Department%20Inquiry%20for%20{{ gm.name }}%20({{ gm.department }})"
-                                       class="px-4 py-2.5 rounded-xl bg-white border border-gold text-emerald-deep text-xs font-bold hover:bg-emerald-deep hover:text-gold-light transition">
+                                       class="py-2.5 rounded-xl bg-white border border-gold text-emerald-deep text-xs font-bold text-center hover:bg-emerald-deep hover:text-gold-light transition">
                                         ✉ Gmail
                                     </a>
                                     <a href="https://wa.me/91{{ gm.phone }}?text=Hello%20{{ gm.name }}%20({{ gm.role }}%20-%20{{ gm.department }}),%20I%20would%20like%20to%20discuss%20a%20property%20requirement%20with%20Aurevia%20Realtors."
                                        target="_blank"
-                                       class="px-5 py-2.5 rounded-xl gold-btn text-xs font-bold text-center">
+                                       class="py-2.5 rounded-xl gold-btn text-xs font-bold text-center">
                                         WhatsApp GM
                                     </a>
                                 </div>
@@ -1951,7 +1967,7 @@ HTML_TEMPLATE = """
                     <!-- Card Footer Actions with Restyled Phone Pill -->
                     <div class="px-6 pb-6 pt-4 border-t border-stone-100 bg-ivory/40">
                         <div class="flex flex-wrap items-center justify-between gap-2 mb-3.5 text-xs">
-                            <span class="text-stone-500">Mandate Head: <strong class="text-emerald-deep">{{ prop.contact_person }}</strong></span>
+                            <span class="text-stone-500">Mandate Head: <strong class="text-emerald-deep">{{ prop.contact_person }} ({{ prop.contact_role }})</strong></span>
                             <a href="tel:{{ prop.contact_phone }}" class="phone-pill text-[11px]">
                                 <span class="phone-pill-icon">
                                     <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
@@ -2032,18 +2048,22 @@ HTML_TEMPLATE = """
                             <span class="text-[11px] font-extrabold uppercase tracking-widest text-gold-light block mb-2.5">
                                 One-Click Department Gmail Templates:
                             </span>
-                            <div class="flex flex-wrap gap-2.5">
-                                <a href="mailto:{{ company.email }}?subject=Director%20Desk%20Consultation%20(Mr.%20Narendar%20Bhati)%20—%20Aurevia%20Realtors&body=Respected%20Mr.%20Narendar%20Bhati,%0A%0AI%20would%20like%20to%20connect%20regarding%20a%20high-value%20real%20estate%20mandate.%0A%0AName:%0APhone:%0APreferred%20Project:"
-                                   class="text-xs font-bold px-4 py-2 rounded-full bg-white/10 border border-gold/40 text-ivory hover:bg-gold hover:text-emerald-deep transition">
-                                    👑 Email Director's Office
+                            <div class="flex flex-wrap gap-2">
+                                <a href="mailto:{{ company.email }}?subject=Director%20Desk%20Consultation%20(Mr.%20Narendar%20Bhati)%20—%20Aurevia%20Realtors"
+                                   class="text-xs font-bold px-3.5 py-2 rounded-full bg-white/10 border border-gold/40 text-ivory hover:bg-gold hover:text-emerald-deep transition">
+                                    👑 Director's Office (Narendar Bhati)
                                 </a>
-                                <a href="mailto:{{ company.email }}?subject=Fresh%20Booking%20%26%20Resale%20Dossier%20(Attn:%20GM%20Anand%20Basista)&body=Hello%20Mr.%20Anand%20Basista,%0A%0APlease%20share%20the%20official%20cost%20sheet%20and%20floor%20plans%20for:%0A%0AProject%20Name:%0AUnit%20Size:%0AContact%20Number:"
-                                   class="text-xs font-bold px-4 py-2 rounded-full bg-white/10 border border-gold/40 text-ivory hover:bg-gold hover:text-emerald-deep transition">
-                                    🏢 Email Resale & Fresh Desk (Anand Basista)
+                                <a href="mailto:{{ company.email }}?subject=Resale%20%26%20Plots%20Dossier%20(Attn:%20GM%20Anand%20Basista)"
+                                   class="text-xs font-bold px-3.5 py-2 rounded-full bg-white/10 border border-gold/40 text-ivory hover:bg-gold hover:text-emerald-deep transition">
+                                    🏢 Resale & Plots (Anand Basista)
                                 </a>
-                                <a href="mailto:{{ company.email }}?subject=Corporate%20%26%20Luxury%20Leasing%20Mandate%20(Attn:%20GM%20Apurv%20Mishra)&body=Hello%20Mr.%20Apurv%20Mishra,%0A%0AWe%20have%20a%20corporate/residential%20leasing%20requirement%20in%20Noida:%0A%0ARequired%20Area%20/%20BHK:%0APreferred%20Sector:%0AContact%20Number:"
-                                   class="text-xs font-bold px-4 py-2 rounded-full bg-white/10 border border-gold/40 text-ivory hover:bg-gold hover:text-emerald-deep transition">
-                                    🔑 Email Leasing Desk (Apurv Mishra)
+                                <a href="mailto:{{ company.email }}?subject=2026%20Fresh%20Project%20Allotment%20(Attn:%20GM%20Himanshu%20Bhutai)"
+                                   class="text-xs font-bold px-3.5 py-2 rounded-full bg-white/10 border border-gold/40 text-ivory hover:bg-gold hover:text-emerald-deep transition">
+                                    ✨ Fresh Projects (Himanshu Bhutai)
+                                </a>
+                                <a href="mailto:{{ company.email }}?subject=Corporate%20%26%20Luxury%20Leasing%20Mandate%20(Attn:%20GM%20Apurv%20Mishra)"
+                                   class="text-xs font-bold px-3.5 py-2 rounded-full bg-white/10 border border-gold/40 text-ivory hover:bg-gold hover:text-emerald-deep transition">
+                                    🔑 Leasing Desk (Apurv Mishra)
                                 </a>
                             </div>
                         </div>
@@ -2051,7 +2071,7 @@ HTML_TEMPLATE = """
 
                     <!-- Right Column: Direct Executive Phone & Gmail Directory Card -->
                     <div class="lg:col-span-5">
-                        <div class="bg-ivory text-emerald-deep rounded-3xl p-7 border-2 border-gold shadow-xl space-y-4">
+                        <div class="bg-ivory text-emerald-deep rounded-3xl p-7 border-2 border-gold shadow-xl space-y-3.5">
                             <span class="text-[10px] font-extrabold uppercase tracking-[0.24em] text-gold-dark block">
                                 Unified Communication Directory
                             </span>
@@ -2059,36 +2079,35 @@ HTML_TEMPLATE = """
                                 Official Hotlines & Gmail
                             </h3>
 
-                            <div class="space-y-3 pt-2">
-                                <div class="p-3.5 rounded-2xl bg-white border gold-border flex items-center justify-between gap-2">
+                            <div class="space-y-2.5 pt-1">
+                                <div class="p-3 rounded-2xl bg-white border gold-border flex items-center justify-between gap-2">
                                     <div>
-                                        <span class="text-[10px] font-extrabold uppercase text-gold-dark block">Director of the Company</span>
+                                        <span class="text-[9px] font-extrabold uppercase text-gold-dark block">Director of the Company</span>
                                         <p class="font-serif text-lg font-bold text-emerald-deep">{{ director.name }}</p>
                                     </div>
                                     <a href="tel:{{ director.phone }}" class="phone-pill text-xs">
-                                        <span class="phone-pill-icon">📞</span>
-                                        <span class="font-mono text-xs">{{ director.phone_display }}</span>
+                                        <span class="phone-pill-icon">👑</span>
+                                        <span class="font-mono text-[11px]">{{ director.phone_display }}</span>
                                     </a>
                                 </div>
 
                                 {% for gm in general_managers %}
-                                <div class="p-3.5 rounded-2xl bg-white border gold-border flex items-center justify-between gap-2">
+                                <div class="p-3 rounded-2xl bg-white border gold-border flex items-center justify-between gap-2">
                                     <div>
-                                        <span class="text-[10px] font-extrabold uppercase text-emerald-rich block">GM — {{ gm.department }}</span>
+                                        <span class="text-[9px] font-extrabold uppercase text-emerald-rich block">GM — {{ gm.department }}</span>
                                         <p class="font-serif text-lg font-bold text-emerald-deep">{{ gm.name }}</p>
                                     </div>
                                     <a href="tel:{{ gm.phone }}" class="phone-pill text-xs">
                                         <span class="phone-pill-icon">📞</span>
-                                        <span class="font-mono text-xs">{{ gm.phone_display }}</span>
+                                        <span class="font-mono text-[11px]">{{ gm.phone_display }}</span>
                                     </a>
                                 </div>
                                 {% endfor %}
                             </div>
 
-                            <div class="p-4 rounded-2xl bg-emerald-deep text-ivory border border-gold text-xs space-y-1">
+                            <div class="p-3.5 rounded-2xl bg-emerald-deep text-ivory border border-gold text-xs space-y-1">
                                 <p class="text-gold-light font-bold uppercase tracking-wider">Central Electronic Mail:</p>
                                 <p class="font-mono text-sm font-bold">{{ company.email }}</p>
-                                <p class="text-ivory/70 text-[11px]">All inquiries are logged and responded to within 2 business hours.</p>
                             </div>
                         </div>
                     </div>
@@ -2173,20 +2192,15 @@ HTML_TEMPLATE = """
                             </div>
                             <div class="pt-2 border-t border-gold/30 space-y-2">
                                 <span class="text-[10px] font-extrabold uppercase tracking-wider text-emerald-rich block">General Managers Team</span>
+                                {% for gm in general_managers %}
                                 <div>
-                                    <p class="font-bold text-emerald-deep mb-1">Anand Basista (GM — Resale & Fresh)</p>
-                                    <a href="tel:8287906328" class="phone-pill text-[11px]">
+                                    <p class="font-bold text-emerald-deep mb-1">{{ gm.name }} (GM — {{ gm.department }})</p>
+                                    <a href="tel:{{ gm.phone }}" class="phone-pill text-[11px]">
                                         <span class="phone-pill-icon">📞</span>
-                                        <span class="font-mono">(+91) 82879-06328</span>
+                                        <span class="font-mono">{{ gm.phone_display }}</span>
                                     </a>
                                 </div>
-                                <div>
-                                    <p class="font-bold text-emerald-deep mb-1">Apurv Mishra (GM — Leasing)</p>
-                                    <a href="tel:9412880777" class="phone-pill text-[11px]">
-                                        <span class="phone-pill-icon">📞</span>
-                                        <span class="font-mono">(+91) 94128-80777</span>
-                                    </a>
-                                </div>
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -2207,6 +2221,7 @@ HTML_TEMPLATE = """
                                 </select>
                                 <select name="specialist" class="w-full px-4 py-3.5 rounded-xl bg-ivory border border-gold/40 text-sm">
                                     <option value="Director Office — Narendar Bhati">👑 Director's Office — Narendar Bhati</option>
+                                    <option value="GM Team — Himanshu Bhutai (Fresh Project)">GM — Himanshu Bhutai (Fresh Project)</option>
                                     <option value="GM Team — Anand Basista (Resale & Fresh)">GM — Anand Basista (Resale & Fresh Project)</option>
                                     <option value="GM Team — Apurv Mishra (Leasing)">GM — Apurv Mishra (Leasing Department)</option>
                                 </select>
@@ -2531,5 +2546,5 @@ def view_leads():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    print(f"\n✨ Aurevia Realtors Portal (Gmail + Luxury Phone Pills) is LIVE at: http://127.0.0.1:{port}\n")
+    print(f"\n✨ Aurevia Realtors Portal (Director + 3 GMs) is LIVE at: http://127.0.0.1:{port}\n")
     app.run(host="0.0.0.0", port=port, debug=True)
